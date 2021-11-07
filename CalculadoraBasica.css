@@ -4,6 +4,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
     background-color: rgb(240, 193, 132);
+    color:black;
     text-align: center;
 }
 
@@ -13,9 +14,9 @@ body {
 form{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-bottom: 5%;
         
-        border-radius: 5%;
+        
+        border-radius: 6%;
         
         margin: auto;
 
@@ -25,6 +26,7 @@ h1 {
     text-transform: uppercase;
     text-align: left;
     color:  rgb(30, 41, 75);
+    background-color: rgb(240, 193, 132);
     font-size: 100%;
     margin-bottom: 3%;
     margin-left: 2%;
@@ -35,8 +37,10 @@ h1 {
 
 label {
     color: rgb(255, 255, 255);
-    grid-column: span 4;
     
+    background-color: rgb(240, 193, 132);
+    grid-column: span 4;
+    visibility: hidden;
     text-align: center;
     
 }
@@ -50,7 +54,7 @@ input[type=submit]  {
 }
 
 input[type=button]  {
-    
+    color:black;
     background-color: rgb(204, 189, 189);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 60%;
@@ -65,9 +69,11 @@ input[type=button]  {
 
 input[type=text] {
     grid-column: span 4;
-    background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
+    background-color: white;
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
     width: 50%;
     text-align: left;
     margin: auto;
@@ -79,11 +85,9 @@ input[type=text] {
 
     form {
         background-color: rgb(13, 102, 43);
+        color:black;
         
     }
 
-    input[type=button] {
-        font-size: 100%;
-    }
 
 }
