@@ -4,19 +4,18 @@ class CalculadoraBasica{
         this.memoria = "";
     }
 
-    mrc() {
-        document.getElementById('pantalla').value += this.memoria;
+    
+
+    digitos(x) {
+        document.getElementById('pantalla').value += Number(x);
+        this.digitos = digitos; 
     }
 
-    mMenos() {
-        this.memoria = "";
+    punto() {
+        document.getElementById('pantalla').value += ".";
     }
 
-    /**/
-    mMas() {
-        this.memoria += document.getElementById('pantalla').value;
-    }
-
+   
     suma() {
         document.getElementById('pantalla').value += "+";
     }
@@ -34,19 +33,20 @@ class CalculadoraBasica{
     }
 
 
-
-    digitos(x) {
-        document.getElementById('pantalla').value += x;
-        this.digitos = digitos; 
+    mrc() {
+        document.getElementById('pantalla').value += this.memoria;
     }
 
-    punto() {
-        document.getElementById('pantalla').value += ".";
+    mMenos() {
+        this.memoria = "";
     }
 
-   
+    /**/
+    mMas() {
+        this.memoria += document.getElementById('pantalla').value;
+    }
 
-    
+
 
     borrar() {
         document.getElementById('pantalla').value = "";
