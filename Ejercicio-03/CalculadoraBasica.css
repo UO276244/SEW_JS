@@ -1,0 +1,93 @@
+body {
+    width: 60%;
+    margin: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    background-color: rgb(240, 193, 132);
+    color:black;
+    text-align: center;
+}
+
+
+
+
+form{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        
+        border-radius: 6%;
+        
+        margin: auto;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: left;
+    color:  rgb(30, 41, 75);
+    background-color: rgb(240, 193, 132);
+    font-size: 100%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+
+
+
+
+label {
+    color: rgb(255, 255, 255);
+    
+    background-color: rgba(248, 248, 248, 0);
+    grid-column: span 4;
+    
+    text-align: center;
+    
+}
+
+
+input[type=submit]  {
+    
+    visibility: hidden;
+    
+    
+}
+
+input[type=button]  {
+    color:black;
+    background-color: rgb(204, 189, 189);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60%;
+    margin: 30%;
+    border-radius: 5%;
+    width: 60%;
+    height: 60%;
+    text-align: center;
+    
+    
+}
+
+input[type=text] {
+    grid-column: span 4;
+    color: black;
+    background-color: white;
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    font-size: 150%;
+    align-self: center;
+}
+
+@media only screen and (min-width: 25em) {
+
+    form {
+        background-color: rgb(13, 102, 43);
+        color:black;
+        
+    }
+
+
+}

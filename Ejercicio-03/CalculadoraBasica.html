@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <!-- Datos que describen el documento -->
+
+        <meta charset="UTF-8" />
+        <title>Calculadora Basica</title>
+        <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css" />
+        
+    
+        <meta name="author" content="Martin Beltran" />
+        <meta name="description" content="Calculadora Basica" />
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+        <script src="CalculadoraBasica.js"></script>
+           
+    </head>
+    <body>
+        <h1>Basic Calculator</h1>
+        <form>
+
+            <label for="pantalla">Result</label>
+            <input type="text" name="pantalla" id="pantalla" value="" lang="en" disabled>
+            <!--Primera fila de botones-->
+            <input type="button" value="mrc" onclick="calculadora.mrc()" />
+            <input type="button" value="m-" onclick="calculadora.mMenos()" />
+            <input type="button" value="m+" onclick="calculadora.mMas()" />
+            <input type="button" value="/" onclick="calculadora.division()" />
+<!--Segunda fila de botones-->
+            <input type="button" value="7" onclick="calculadora.digitos(7)" />
+            <input type="button" value="8" onclick="calculadora.digitos(8)" />
+            <input type="button" value="9" onclick="calculadora.digitos(9)" />
+            <input type="button" value="*" onclick="calculadora.multiplicacion()" />
+<!--Tercera fila de botones-->
+            <input type="button" value="4" onclick="calculadora.digitos(4)" />
+            <input type="button" value="5" onclick="calculadora.digitos(5)" />
+            <input type="button" value="6" onclick="calculadora.digitos(6)" />
+            <input type="button" value="-" onclick="calculadora.resta()" />
+<!--Cuarta fila de botones-->
+            <input type="button" value="1" onclick="calculadora.digitos(1)" />
+            <input type="button" value="2" onclick="calculadora.digitos(2)" />
+            <input type="button" value="3" onclick="calculadora.digitos(3)" />
+            <input type="button" value="+" onclick="calculadora.suma()" />
+<!--Quinta fila de botones-->
+            <input type="button" value="0" onclick="calculadora.digitos(0)" />
+            <input type="button" value="." onclick="calculadora.punto()" />
+            <input type="button" value="C" onclick="calculadora.borrar()" />
+            <input type="button" value="=" onclick="calculadora.igual()" />
+
+
+            <input type="submit" value="submit"  />
+        </form>
+
+    </body>
+</html>
