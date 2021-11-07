@@ -42,8 +42,14 @@ label {
 }
 
 
+input[type=submit]  {
+    
+    visibility: hidden;
+    
+    
+}
 
-input[type=button] {
+input[type=button]  {
     
     background-color: rgb(204, 189, 189);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
