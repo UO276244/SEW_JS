@@ -1,0 +1,84 @@
+body {
+    width: 60%;
+    margin: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    background-color: rgb(240, 193, 132);
+    text-align: center;
+}
+
+
+
+
+form{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 5%;
+        
+        border-radius: 5%;
+        
+        margin: auto;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: left;
+    color:  rgb(30, 41, 75);
+    font-size: 100%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+
+
+
+
+label {
+    text-transform: uppercase;
+    text-align: right;
+    
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+input[type=button] {
+    
+    background-color: rgb(204, 189, 189);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60%;
+    margin: 30%;
+    border-radius: 5%;
+    width: 60%;
+    height: 60%;
+    text-align: center;
+    
+    
+}
+
+input[type=text] {
+    grid-column: span 4;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    font-size: 150%;
+    align-self: center;
+}
+
+@media only screen and (min-width: 25em) {
+
+    form {
+        background-color: rgb(13, 102, 43);
+        
+    }
+
+    input[type=button] {
+        font-size: 100%;
+    }
+
+}
