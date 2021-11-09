@@ -1,0 +1,1 @@
+ document.write(cabeceraDatos.nombreCentro)

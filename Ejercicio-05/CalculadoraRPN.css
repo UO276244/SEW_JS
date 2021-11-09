@@ -13,7 +13,7 @@ body {
 
 form{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto auto;
         
         
         border-radius: 6%;
@@ -98,8 +98,9 @@ input[type=button][ value = "m+"]{
 }
 
 
-input[type=text] {
+input[type=text][name='currentnum'] {
     grid-column: span 4;
+    grid-row: span 4;
     color: black;
     background-color: rgb(138, 235, 118);
    
@@ -108,7 +109,22 @@ input[type=text] {
     width: 80%;
     text-align: left;
     margin: auto;
-    font-size: 150%;
+    font-size: 60%;
+    align-self: center;
+}
+
+input[type=text][name='pantalla'] {
+    grid-column: span 4;
+    grid-row: span 4;
+    color: black;
+    background-color: rgb(138, 235, 118);
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    font-size: 60%;
     align-self: center;
 }
 

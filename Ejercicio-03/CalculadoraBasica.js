@@ -2,13 +2,14 @@ class CalculadoraBasica{
 
     constructor() {
         this.memoria = "";
+        //this.dig = null;
     }
 
     
 
     digitos(x) {
         document.getElementById('pantalla').value += Number(x);
-        this.digitos = digitos; 
+        //this.dig = dig; 
     }
 
     punto() {
@@ -64,6 +65,41 @@ class CalculadoraBasica{
 
 
 
+
 }
 
 calculadora = new CalculadoraBasica();
+
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === '+') {
+      calculadora.suma();
+    }
+    if (event.key === '-') {
+      calculadora.resta();
+    }
+    if (event.key === '/') {
+        calculadora.division();
+      }
+    if (event.key === '*') {
+        calculadora.multiplicacion();
+    }
+    if(event.key === '1' || event.key==='2' ||
+        event.key === '3' || event.key==='4' ||
+        event.key === '5' || event.key==='6' ||
+        event.key === '7' || event.key==='8' ||
+        event.key === '9'){
+
+            calculadora.digitos(Number(event.key));
+
+    }
+    if(event.keyCode === 13){//Enter
+        event.preventDefault();
+        calculadora.igual();
+    }
+    if(event.keyCode === 46){//Borrar
+        event.preventDefault();
+        calculadora.borrar();
+    }
+
+  });
