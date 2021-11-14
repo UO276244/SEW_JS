@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="es">
+<html lang="en">
     <head>
         <!-- Datos que describen el documento -->
 
@@ -15,11 +15,17 @@
            
     </head>
     <body>
-        <h1>Scientific Calculator</h1>
+        <h1>Calculadora Cientifica</h1>
         <form>
 
-            <label for="pantalla">Result</label>
+            <label for="pantalla">Resultado</label>
             <input type="text" name="pantalla" id="pantalla" value="" lang="en" disabled>
+
+            <input type="button" value="MC" onclick="calculadora.mc()" />
+            <input type="button" value="MR" onclick="calculadora.mr()" />
+            <input type="button" value="M+" onclick="calculadora.mMas()" />
+            <input type="button" value="M-" onclick="calculadora.mMenos()" />
+            <input type="button" value="MS" onclick="calculadora.mrc()" />
            
             <input type="button" value="x^2" onclick="calculadora.pow2()" />
             <input type="button" value="x^y" onclick="calculadora.pow()" />

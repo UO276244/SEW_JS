@@ -35,16 +35,16 @@ class CalculadoraBasica{
 
 
     mrc() {
-        document.getElementById('pantalla').value += this.memoria;
+        this.memoria = document.getElementById('pantalla').value ;
     }
 
     mMenos() {
-        this.memoria = "";
+        document.getElementById('pantalla').value = document.getElementById('pantalla').value +  "-" + this.memoria;
     }
 
     /**/
     mMas() {
-        this.memoria += document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value = document.getElementById('pantalla').value +  "+" + this.memoria;
     }
 
 
@@ -75,6 +75,14 @@ class calculadoraCientifica extends CalculadoraBasica{
 
     constructor() {
         super();
+    }
+
+    mr(){
+        document.getElementById('pantalla').value = this.memoria;
+    }
+
+    mc(){
+        this.memoria = "";
     }
 
     abrirParentesis() {
@@ -201,22 +209,22 @@ document.addEventListener('keydown', function (event) {
     if (event.key === '*') {
         calculadora.multiplicacion();
     }
-    if(event.key === '1' || event.key==='2' ||
-        event.key === '3' || event.key==='4' ||
-        event.key === '5' || event.key==='6' ||
-        event.key === '7' || event.key==='8' ||
-        event.key === '9'){
+    if(event.key >= '0' && event.key <= '9'){
 
             calculadora.digitos(Number(event.key));
 
     }
    
-    if(event.keyCode === 13){//Enter
+    if(event.key === 'Enter'){//Enter
         event.preventDefault();
         calculadora.igual();
     }
-    if(event.keyCode === 46){//Borrar
+    if(event.key === 'Delete'){//Borrar todo
         event.preventDefault();
         calculadora.borrar();
+    }
+    if(event.key === 'Backspace'){//Borrar ultimo
+        event.preventDefault();
+        calculadora.borrarUltimo();
     }
   });
