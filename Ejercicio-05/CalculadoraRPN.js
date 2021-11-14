@@ -150,22 +150,19 @@ document.addEventListener('keydown', function (event) {
     if (event.key === '*') {
         calculadoraRPN.multiplicacion();
     }
-    if(event.key === '1' || event.key==='2' ||
-        event.key === '3' || event.key==='4' ||
-        event.key === '5' || event.key==='6' ||
-        event.key === '7' || event.key==='8' ||
-        event.key === '9'){
+    if(event.key >= '0' && event.key <= '9'){
 
-            calculadoraRPN.digito(Number(event.key));
+        calculadora.digito(Number(event.key));
 
+}
+    if(event.key === 'Enter'){//Enter
+        event.preventDefault();
+        calculadora.enter();
     }
+    if(event.key === 'Delete'){//Borrar todo
+        event.preventDefault();
+        calculadora.vaciar();
+    }
+    
   
-    if(event.keyCode === 13){//Enter
-        event.preventDefault();
-        calculadoraRPN.enter();
-    }
-    if(event.keyCode === 46){//Borrar
-        event.preventDefault();
-        calculadoraRPN.vaciar();
-    }
   });

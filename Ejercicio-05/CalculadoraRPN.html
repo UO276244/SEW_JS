@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="es">
     <head>
         <!-- Datos que describen el documento -->
 
@@ -17,49 +17,64 @@
     </head>
     <body>
         <h1>Calculadora RPN</h1>
-        <form>
+        <section>
 
-            <label for="pantalla">Pila</label>
-            <input type="text" name="pantalla" id="pantalla" value="" lang="en" disabled>
-           
-            <label for="currentnum">Numbero Actual</label>
-            <input type="text" name="currentnum" id="currentnum" value="" lang="en" disabled>
+            <form>
+
+                <label for="pantalla">Pila</label>
+                <input type="text" name="pantalla" id="pantalla" value="" lang="es" disabled>
+               
+                <label for="currentnum">Numbero Actual</label>
+                <input type="text" name="currentnum" id="currentnum" value="" lang="es" disabled>
+                
+                <input type="button" value="sin" onclick="calculadoraRPN.sin()" />
+                <input type="button" value="cos" onclick="calculadoraRPN.cos()" />
+                <input type="button" value="tan" onclick="calculadoraRPN.tan()" />
+                <input type="button" value="/" onclick="calculadoraRPN.division()" />
+    
+                <input  type="button" value="arcsin" onclick="calculadoraRPN.arcsin()" />
+                <input type="button" value="arccos" onclick="calculadoraRPN.arccos()" />
+                <input  type="button" value="arctan" onclick="calculadoraRPN.arctan()" />
+                <input type="button" value="+" onclick="calculadoraRPN.suma()" />
+    
+    
+                <input type="button" value="1" onclick="calculadoraRPN.digito(1)" />
+                <input type="button" value="2" onclick="calculadoraRPN.digito(2)" />
+                <input type="button" value="3" onclick="calculadoraRPN.digito(3)" />
+                
+                <input type="button" value="-" onclick="calculadoraRPN.resta()" />
+    
+                <input type="button" value="4" onclick="calculadoraRPN.digito(4)" />
+                <input type="button" value="5" onclick="calculadoraRPN.digito(5)" />
+                <input type="button" value="6" onclick="calculadoraRPN.digito(6)" />
+               
+                <input type="button" value="*" onclick="calculadoraRPN.multiplicacion()" />
+    
+               
+                <input type="button" value="7" onclick="calculadoraRPN.digito(7)" />
+                <input type="button" value="8" onclick="calculadoraRPN.digito(8)" />
+                <input type="button" value="9" onclick="calculadoraRPN.digito(9)" />
+                <input type="button" value="0" onclick="calculadoraRPN.digito(0)" />
+               
+                <input type="button" value="+-" onclick="calculadoraRPN.changeSign()" />
+                <input type="button" value="ENTER" onclick="calculadoraRPN.enter()" />
+                <input type="button" value="C" onclick="calculadoraRPN.vaciar()" />
+    
+                <input type="submit" value="submit"  />
+            </form>
+
             
-            <input type="button" value="sin" onclick="calculadoraRPN.sin()" />
-            <input type="button" value="cos" onclick="calculadoraRPN.cos()" />
-            <input type="button" value="tan" onclick="calculadoraRPN.tan()" />
-            <input type="button" value="/" onclick="calculadoraRPN.division()" />
 
-            <input  type="button" value="arcsin" onclick="calculadoraRPN.arcsin()" />
-            <input type="button" value="arccos" onclick="calculadoraRPN.arccos()" />
-            <input  type="button" value="arctan" onclick="calculadoraRPN.arctan()" />
-            <input type="button" value="+" onclick="calculadoraRPN.suma()" />
+            <ul>
+                <li> <p> Para ver todos los valores de la pila, puedes pulsar sobre ella y moverte con las flechas izq y drch del teclado
+
+                </p></li>
+                
+            </ul>
 
 
-            <input type="button" value="1" onclick="calculadoraRPN.digito(1)" />
-            <input type="button" value="2" onclick="calculadoraRPN.digito(2)" />
-            <input type="button" value="3" onclick="calculadoraRPN.digito(3)" />
-            
-            <input type="button" value="-" onclick="calculadoraRPN.resta()" />
-
-            <input type="button" value="4" onclick="calculadoraRPN.digito(4)" />
-            <input type="button" value="5" onclick="calculadoraRPN.digito(5)" />
-            <input type="button" value="6" onclick="calculadoraRPN.digito(6)" />
-           
-            <input type="button" value="*" onclick="calculadoraRPN.multiplicacion()" />
-
-           
-            <input type="button" value="7" onclick="calculadoraRPN.digito(7)" />
-            <input type="button" value="8" onclick="calculadoraRPN.digito(8)" />
-            <input type="button" value="9" onclick="calculadoraRPN.digito(9)" />
-            <input type="button" value="0" onclick="calculadoraRPN.digito(0)" />
-           
-            <input type="button" value="+-" onclick="calculadoraRPN.changeSign()" />
-            <input type="button" value="ENTER" onclick="calculadoraRPN.enter()" />
-            <input type="button" value="C" onclick="calculadoraRPN.vaciar()" />
-
-            <input type="submit" value="submit"  />
-        </form>
+        </section>
+        
 
     </body>
 </html>
