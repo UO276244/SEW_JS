@@ -44,7 +44,7 @@ class Pila {
         var elem;
         for(i = 0; i<this.size();i++){
             elem = this.datos.pop();
-            str += "("+i+": " + elem +") - ";
+            str += "("+i+": \t\t" + elem +")\n";
             arrayAux.push(elem);
         }
 

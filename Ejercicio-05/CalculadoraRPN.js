@@ -152,16 +152,16 @@ document.addEventListener('keydown', function (event) {
     }
     if(event.key >= '0' && event.key <= '9'){
 
-        calculadora.digito(Number(event.key));
+        calculadoraRPN.digito(Number(event.key));
 
 }
     if(event.key === 'Enter'){//Enter
         event.preventDefault();
-        calculadora.enter();
+        calculadoraRPN.enter();
     }
     if(event.key === 'Delete'){//Borrar todo
         event.preventDefault();
-        calculadora.vaciar();
+        calculadoraRPN.vaciar();
     }
     
   

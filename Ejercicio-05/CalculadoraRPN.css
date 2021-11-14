@@ -113,7 +113,7 @@ input[type=text][name='currentnum'] {
     align-self: center;
 }
 
-input[type=text][name='pantalla'] {
+textarea{
     grid-column: span 4;
     /*grid-row: span 4;*/
     color: black;
