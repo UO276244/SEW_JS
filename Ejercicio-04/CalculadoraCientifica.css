@@ -1,3 +1,4 @@
+/*Selector Specificity: (0, 0, 1)*/
 body {
     width: 60%;
     margin: 5%;
@@ -10,18 +11,16 @@ body {
 
 
 
-
+/*Selector Specificity: (0, 0, 1)*/
 form{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        
-        
         border-radius: 6%;
         
         margin: auto;
 
 }
-
+/*Selector Specificity: (0, 0, 1)*/
 h1 {
     text-transform: uppercase;
     text-align: left;
@@ -34,7 +33,7 @@ h1 {
 
 
 
-
+/*Selector Specificity: (0, 0, 1)*/
 label {
     color: rgb(0, 0, 0);
     
@@ -45,7 +44,7 @@ label {
     
 }
 
-
+/*Selector Specificity: (0, 1, 1)*/
 input[type=submit]  {
     
     visibility: hidden;
@@ -53,6 +52,8 @@ input[type=submit]  {
     
 }
 
+
+/*Selector Specificity: (0, 1, 1)*/
 input[type=button]  {
     color:black;
     background-color: whitesmoke;
@@ -66,7 +67,21 @@ input[type=button]  {
     
     
 }
+/*Selector Specificity: (0, 2, 1)*/
+input[type=button][value ="F-E"]{
+    visibility: hidden;
+}
+/*Selector Specificity: (0, 2, 1)*/
+input[type=button][value ="HYD"]{
+    visibility: hidden;
+}
+/*Selector Specificity: (0, 2, 1)*/
+input[type=button][value ="inv"]{
+    visibility: hidden;
+}
 
+
+/*Selector Specificity: (0, 1, 1)*/
 input[type=text] {
     grid-column: span 5;
     color: black;
@@ -74,15 +89,17 @@ input[type=text] {
    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
-    width: 50%;
+    width: 80%;
+    height: 100%;
     text-align: left;
     margin: auto;
-    font-size: 150%;
+    font-size: 100%;
     align-self: center;
 }
 
 @media only screen and (min-width: 25em) {
 
+/*Selector Specificity: (0, 0, 1)*/
     form {
         background-color: lightslategray;
         color:black;

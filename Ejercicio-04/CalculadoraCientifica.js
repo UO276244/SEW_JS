@@ -75,6 +75,25 @@ class calculadoraCientifica extends CalculadoraBasica{
 
     constructor() {
         super();
+        this.isDeg = true;
+    }
+
+    deg(){
+
+
+        let num = eval(document.getElementById('pantalla').value);
+
+        if(this.isDeg == true){
+
+            document.getElementById('pantalla').value = num *( Math.PI/180);
+            this.isDeg = false;
+
+        }else{
+            
+            document.getElementById('pantalla').value = num *(180/Math.PI);
+            this.isDeg = true;
+        }
+
     }
 
     mr(){
