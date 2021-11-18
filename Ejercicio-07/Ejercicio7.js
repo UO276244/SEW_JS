@@ -5,6 +5,8 @@ class JQuery{
 
     constructor(){
 
+        this.recorrido = false;
+
     }
 
     ocultarTitulos(){
@@ -36,29 +38,42 @@ class JQuery{
 
     traverseDOM(){
         
-        $("*", document.body).each(function() {
-            var etiquetaPadre = $(this).parent().get(0).tagName;
-            $(this).prepend(document.createTextNode( "Etiqueta padre : <"  + etiquetaPadre + "> tipo elemento : <" + $(this).get(0).tagName +"> valor: "));
-        });
+        if(this.recorrido == false){
+            $("*", document.body).each(function() {
+                var etiquetaPadre = $(this).parent().get(0).tagName;
+                $(this).prepend(document.createTextNode( "Etiqueta padre : <"  + etiquetaPadre + "> tipo elemento : <" + $(this).get(0).tagName +"> valor: "));
+            });
+
+            this.recorrido = true;
+        }
+        
     
     }
 
 
     sumarCeldas(){
 
-        let total = parseInt("0");
 
-        $("table tr td").each(function(){
-            if(!isNaN(parseInt($(this).text()))){
-                total += parseInt($(this).text());
+        if(this.recorrido == true){
+                alert("El contenido de las celdas ha cambiado debido a recorrer el arbol dom, recargue la página para resetear.");
+        }else{
+
+            
+                let total = parseInt("0");
+
+                $("table tr td").each(function(){
+                    if(!isNaN(parseInt($(this).text()))){
+                        total += parseInt($(this).text());
+                    }
+                });
+                
+            
+
+
+                $("#totSum").val( total);
             }
-        });
-        
-      
 
-
-          $("#totSum").val( total);
-    }
+        }
 
 }
 
