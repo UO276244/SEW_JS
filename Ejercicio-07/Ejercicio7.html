@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <!-- Datos que describen el documento -->
+
+        <meta charset="UTF-8" />
+        <title>Ejercicio 7</title>
+        <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+        
+    
+        <meta name="author" content="Martin Beltran" />
+        <meta name="description" content="Ejercicio 7 " />
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="Ejercicio7.js"></script>
+           
+    </head>
+    <body>
+       
+        <h1> ESTO ES EL PRIMER TÍTULO</h1>
+
+        <h2> ESTO ES EL SEGUNDO TÍTULO</h2>
+
+        <p>El autor de esta practica es: Martin Beltran</p>
+
+        <table>
+
+            <tr>
+          
+              <td>15345</td>
+          
+              <td>3456</td>
+          
+              <td>6544</td>
+          
+            </tr>
+          
+            <tr>
+          
+              <td>454</td>
+          
+              <td>2112</td>
+          
+              <td>5654</td>
+          
+            </tr>
+          
+        </table>
+
+
+
+
+       
+
+        <label for="totSum">Suma total de columnas y filas:</label>
+        <input type="text" id="totSum" value="">
+       
+
+
+
+
+        <label for="campoAutor">Autor de la practica: </label>
+        <input type="text" id="campoAutor" value="Martin Beltran">
+        
+        
+
+        <button id="autor" onclick= jquery.modificarAutor()>Modificar autor</button>
+        
+        <button onclick= jquery.ocultarTitulos()>Ocultar headers</button>
+        
+        <button onclick= jquery.mostrarTitulos()>Mostrar headers</button>
+
+        <button onclick= jquery.afterAutor()>Añadir elementos con after()</button>
+
+        <button onclick= jquery.removeAllH2()>Borrar todos los H2</button>
+
+        <button onclick= jquery.traverseDOM()>Recorrer y mostrar arbol DOM</button>
+
+        <button onclick= jquery.sumarCeldas()>Sumar filas y columnas de la tabla</button>
+    </body>
+</html>
