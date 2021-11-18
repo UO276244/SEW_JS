@@ -22,7 +22,7 @@ class Meteo{
                     this.datos = datos;
 
                 
-                    var listaDatos = "<li><ul><li>Ciudad: " + datos.name + "</li>";
+                    var listaDatos = "<ol><li><ul><li>Ciudad: " + datos.name + "</li>";
                     listaDatos += "<li>País: " + datos.sys.country + "</li>";
                     listaDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
                     listaDatos += "<li>Longitud: " + datos.coord.lon + " grados</li>";
@@ -40,8 +40,8 @@ class Meteo{
                     listaDatos += "<li>Descripción: " + datos.weather[0].description + "</li>";
                     listaDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
                     listaDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li>";
-                    listaDatos += "<li><img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\" alt=\"Icono del tiempo\"></li></ul></li>"
-                $("ol").append(listaDatos);
+                    listaDatos += "<li><img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\" alt=\"Icono del tiempo\"></li></ul></li></ol>"
+                $("h2:last").after(listaDatos);
                 }
           
         });
