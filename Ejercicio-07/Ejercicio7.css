@@ -28,3 +28,22 @@ h2,h3{
     font-family: "Monaco" , sans-serif;
     
 }
+
+
+/*Selector Specificity: (0, 0, 1)*/
+section{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    row-gap: 10%;
+    column-gap: 10%;
+
+}
+/*Selector Specificity: (0, 0, 1)*/
+button{
+    color: white;
+    background-color: #4700B3;
+}
+
+
