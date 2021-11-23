@@ -246,7 +246,53 @@ class RequestCreator{
 
     }
 
+
+    forKeyBoardCheckbuttons(id){
+
+        
+       var checkbox = document.getElementById(id);
+
+       if(checkbox.checked){
+        $("#"+id).prop('checked', false);
+       }else{
+        $("#"+id).prop('checked', true);
+       }
+
+    }
+
 }
+
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'b') {
+        requestCreator.forKeyBoardCheckbuttons('categoria1');
+        
+        requestCreator.checkearCheckbox('categoria1');
+    }
+    if (event.key === 'd') {
+        requestCreator.forKeyBoardCheckbuttons('categoria2');
+        requestCreator.checkearCheckbox('categoria2');
+    }
+    if (event.key === 'g') {
+        requestCreator.forKeyBoardCheckbuttons('categoria3');
+        requestCreator.checkearCheckbox('categoria3');
+      }
+    if (event.key === 'i') {
+        requestCreator.forKeyBoardCheckbuttons('categoria4');
+        requestCreator.checkearCheckbox('categoria4');
+    }
+    if (event.key === 't') {
+        requestCreator.forKeyBoardCheckbuttons('categoria5');
+        requestCreator.checkearCheckbox('categoria5');
+    }
+    if (event.key === 'm') {
+        requestCreator.forKeyBoardCheckbuttons('categoria6');
+        requestCreator.checkearCheckbox('categoria6');
+    }
+    if (event.key === 'r') {
+        requestCreator.forKeyBoardCheckbuttons('porDia');
+    }
+  });
 
 
 var requestCreator = new RequestCreator();
