@@ -1,0 +1,85 @@
+
+/*Selector Specificity: (0, 0, 1)*/
+body {
+    font-family: "Monaco" , sans-serif; 
+    color: #FFFF; 
+    background-color:#000000; 
+ }
+ 
+ /*Selector Specificity: (0, 0, 1)*/
+h1 {
+    color: #fff; 
+    font-family: "Monaco" , sans-serif; 
+    background-color:#4700B3; 
+    text-align: center;  
+}
+
+/*Selector Specificity: (0, 0, 1)*/
+h2,h3{
+    text-align: justify;
+    font-size: medium;
+    color: #fff; 
+    background-color:#000000; 
+    font-family: "Monaco" , sans-serif;
+    
+}
+
+
+/*Selector Specificity: (0, 0, 1)*/
+section{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    row-gap: 10%;
+    column-gap: 10%;
+
+}
+/*Selector Specificity: (0, 0, 2)*/
+main button{
+    color: white;
+    background-color: #4700B3;
+    width: auto;
+    height: 100%;
+    font-size: medium;
+}
+
+/*Selector Specificity: (0, 0, 1)*/
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+/*Selector Specificity: (0, 1, 2)*/
+main input[type=date]{
+
+    width: auto;
+    height: 100%;
+
+}
+
+/*Selector Specificity: (0, 1, 2)*/
+main input[type=text]{
+
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: medium;
+
+}
+
+main select{
+
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: medium;
+   
+
+}
