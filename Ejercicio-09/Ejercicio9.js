@@ -9,8 +9,18 @@ class Meteo{
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
         
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad  + this.unidades + this.idioma + "&APPID=" + this.apiKey + "&mode=xml";
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad  + this.unidades + this.idioma + "&APPID=" + this.apiKey + "&mode=xml";
        this.datos;
+       this.shown = false;
+    }
+
+
+    getShown(){
+        return this.shown;
+    }
+
+    setShown(bool){
+        this.shown = bool;
     }
 
 
@@ -108,7 +118,12 @@ class ArrayCiudades{
         let i = 0;
 
         for(i = 0; i<this.ciudades.length ; i++){
-            this.ciudades[i].cargarDatos();
+
+            if(this.ciudades[i].getShown()==false){
+                this.ciudades[i].cargarDatos();
+                this.ciudades[i].setShown(true);
+            }
+            
         }
        
 
