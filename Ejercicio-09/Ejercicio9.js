@@ -117,6 +117,8 @@ class ArrayCiudades{
 
         let i = 0;
 
+        $('h2').after('<ol></ol>');
+
         for(i = 0; i<this.ciudades.length ; i++){
 
             if(this.ciudades[i].getShown()==false){
@@ -125,6 +127,8 @@ class ArrayCiudades{
             }
             
         }
+
+        $('button').css("visibility","hidden");
        
 
     }
