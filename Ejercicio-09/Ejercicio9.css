@@ -1,0 +1,52 @@
+/*Selector Specificity: (0, 0, 1)*/
+table, th, td,tr {
+    border-width: 0.0625em ; 
+    border-style: solid;;
+    border-color: #4700B3;
+}
+/*Selector Specificity: (0, 0, 1)*/
+body {
+    font-family: "Monaco" , sans-serif; 
+    color: #FFFF; 
+    background-color:#000000; 
+ }
+ 
+ /*Selector Specificity: (0, 0, 1)*/
+h1 {
+    color: #fff; 
+    font-family: "Monaco" , sans-serif; 
+    background-color:#4700B3; 
+    text-align: center;  
+}
+
+/*Selector Specificity: (0, 0, 1)*/
+h2,h3{
+    text-align: justify;
+    font-size: medium;
+    color: #fff; 
+    background-color:#000000; 
+    font-family: "Monaco" , sans-serif;
+    
+}
+
+
+/*Selector Specificity: (0, 0, 1)*/
+section{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    row-gap: 10%;
+    column-gap: 10%;
+
+}
+/*Selector Specificity: (0, 0, 1)*/
+button{
+    color: white;
+    background-color: #4700B3;
+}
+
+img{
+    color: white;
+    background-color: tomato;
+}
