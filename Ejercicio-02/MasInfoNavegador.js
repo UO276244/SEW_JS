@@ -1,3 +1,3 @@
 
-document.write("Version: " + infoNavegador.version + " - Platform: " +  infoNavegador.platform + " - Seller: " + infoNavegador.vendedor);
-document.write(" Agent: " + infoNavegador.agente + " - Java: " +  infoNavegador.javaActivo );
+document.write("Version: " + infoNavegador.version + " - Plataforma: " +  infoNavegador.platform + " - Vendedor: " + infoNavegador.vendedor);
+document.write(" Agente: " + infoNavegador.agente + " - Java activo: " +  infoNavegador.javaActivo );
