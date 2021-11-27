@@ -1,0 +1,21 @@
+
+/*Selector Specificity: (0, 0, 1)*/
+body {
+    font-family: "Monaco" , sans-serif; 
+   
+ }
+ 
+ /*Selector Specificity: (0, 0, 1)*/
+h1 {
+    color: #fff; 
+    font-family: "Monaco" , sans-serif; 
+    background-color:#4700B3; 
+    text-align: center;  
+}
+
+
+ /*Selector Specificity: (0, 0, 1)*/
+main{
+    width:100%; 
+   height:50vw;
+}
