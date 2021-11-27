@@ -24,40 +24,40 @@
         <p>El autor de esta practica es: Martin Beltran</p>
 
         <table>
-
+<!--Se usa id, scope y headers para evitar problemas en aChecker-->
 
           <tr>
 
-            <th scope="col">
+            <th scope="col" id="filas">
               Filas
             </th>
-            <th scope="col">Dato 1</th>
-            <th scope="col">Dato 2</th>
-            <th scope="col">Dato 3</th>
+            <th scope="col" id="dato1">Dato 1</th>
+            <th scope="col" id="dato2">Dato 2</th>
+            <th scope="col" id="dato3">Dato 3</th>
 
           </tr>
 
             <tr>
 
-              <th scope="row">Fila 1</th>
+              <th scope="row" id="fila1">Fila 1</th>
           
-              <td>15345</td>
+              <td headers="fila1 dato1">15345</td>
           
-              <td>3456</td>
+              <td headers="fila1 dato2"></td>>3456</td>
           
-              <td>6544</td>
+              <td headers="fila1 dato3"></td>>6544</td>
           
             </tr>
           
             <tr>
 
-              <th scope="row">Fila 2</th>
+              <th scope="row" id="fila2">Fila 2</th>
           
-              <td>454</td>
+              <td headers="fila2 dato1">454</td>
           
-              <td>2112</td>
+              <td headers="fila2 dato2">2112</td>
           
-              <td>5654</td>
+              <td headers="fila2 dato3">5654</td>
           
             </tr>
           
