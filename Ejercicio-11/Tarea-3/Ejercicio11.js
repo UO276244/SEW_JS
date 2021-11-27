@@ -84,7 +84,7 @@ verErrores(error){
         this.url = url + centro + zoom + tamaño + marcador + sensor + apiKey;
 
         $('img').remove();
-        $('p:last').after("<img src=\"" + this.url + "\" />");
+        $('p:last').after("<img src=\"" + this.url + "\" alt=\"mapa\" />");
     }
 }
 var localizacion = new Geolocalizacion();
