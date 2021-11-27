@@ -28,7 +28,7 @@ class Geolocalizacion{
 
     ir(origen,destino){
 
-        $('br').remove();
+        $('br:last').remove();
         $('iframe').remove();
 
         let query =  "origin=" + origen + "&destination=" + destino;

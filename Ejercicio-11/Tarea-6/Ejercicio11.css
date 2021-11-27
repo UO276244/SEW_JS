@@ -19,6 +19,11 @@ main{
     width:100%; 
    height:50vw;
 }
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 /*Selector Specificity: (0, 0, 1)*/
 iframe{
 
