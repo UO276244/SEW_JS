@@ -29,7 +29,7 @@ cargarDatos(){
     datos+='<p>Rumbo: '+ this.rumbo +' grados</p>'; 
     datos+='<p>Velocidad: '+ this.velocidad +' metros/segundo</p>';
 
-    $('h1').after(datos);
+    $('input').before(datos);
     
 }
 }
