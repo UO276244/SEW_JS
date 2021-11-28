@@ -1,0 +1,45 @@
+
+/*Selector Specificity: (0, 0, 1)*/
+body {
+    font-family: "Monaco" , sans-serif; 
+    
+ }
+ 
+ /*Selector Specificity: (0, 0, 1)*/
+h1 {
+    color: #fff; 
+    font-family: "Monaco" , sans-serif; 
+    background-color:#ff0101; 
+    text-align: center;  
+}
+
+/*Selector Specificity: (0, 0, 1)*/
+h2{
+    text-align: justify;
+    font-size: medium;
+    color: rgb(255, 255, 255); 
+    background-color:#023cf8; 
+    font-family: "Monaco" , sans-serif;
+    
+}
+
+h3{
+    text-align: justify;
+    font-size: medium;
+    color: rgb(0, 0, 0); 
+    background-color:#d3f802; 
+    font-family: "Monaco" , sans-serif;
+    
+}
+
+
+
+
+
+
+
+label{
+	color: #FFFF; 
+    background-color:#000000;
+
+}

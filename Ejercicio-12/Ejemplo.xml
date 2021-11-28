@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<arbolGenealogico xsi:schemaLocation="http://www.uniovi.es BIS_arbolGenSchema.xsd"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+				  xmlns="http://www.uniovi.es">
+
+  <persona nombre="Martin" apellidos="Beltran Diaz" fechaNacimiento="2001-07-23" comentario="Yo">
+
+
+    <datos>
+
+      <lugarNacimiento latitud="43.360278"  longitud="-5.844722"  altitud="238">
+        Oviedo,Asturias
+      </lugarNacimiento>
+
+
+      <foto>
+        yo.jpg
+      </foto>
+
+    </datos>
+
+    <persona nombre="Rocio" apellidos="Diaz Prendes" fechaNacimiento="1972-06-02" comentario="Mi madre">
+
+
+      <datos>
+
+        <lugarNacimiento latitud="43.3605977"  longitud="-5.8448989"  altitud="238">
+          Oviedo,Asturias
+        </lugarNacimiento>
+
+
+        <foto>
+          mama.jpg
+        </foto>
+
+      </datos>
+
+
+
+      <persona nombre="Luz" apellidos="Prendes Cuervo" fechaNacimiento="1938-04-24" comentario="Mi abuela materna">
+
+
+        <datos>
+
+          <lugarNacimiento latitud="43.4229063"  longitud="-5.8292008"  altitud="107">
+            Coruño,Asturias
+          </lugarNacimiento>
+
+
+          <foto>
+            abuelaMat.jpg
+          </foto>
+
+        </datos>
+
+        <persona nombre="Araceli" apellidos="Cuervo" fechaNacimiento="1914-05-20" fechaFallecimiento="1973-09-23" comentario="Mi bisabuela materna">
+          <datos>
+
+            <lugarNacimiento latitud="43.4229056"  longitud="-5.8292068"  altitud="107">
+              Coruño,Asturias
+            </lugarNacimiento>
+
+            <lugarFallecimiento latitud="43.422905"  longitud="-5.829203"  altitud="107">
+              Coruño,Asturias
+            </lugarFallecimiento>
+
+
+            <foto>
+              bisabuelaMat1.jpg
+            </foto>
+
+          </datos>
+        </persona>
+
+
+        <persona nombre="Abelino" apellidos="Prendes" fechaNacimiento="1915-12-20" fechaFallecimiento="1990-12-20" comentario="Mi bisabuelo materno">
+
+          <datos>
+
+            <lugarNacimiento latitud="43.4402661"  longitud="-5.8513265"  altitud="110">
+              Posada de Llanera,Asturias
+            </lugarNacimiento>
+
+            <lugarFallecimiento latitud="43.4402681"  longitud="-5.8513213"  altitud="110">
+              Posada de Llanera,Asturias
+            </lugarFallecimiento>
+
+
+            <foto>
+              bisabueloMat1.jpg
+            </foto>
+
+          </datos>
+
+        </persona>
+
+
+
+      </persona>
+
+
+      <persona nombre="Anibal" apellidos="Diaz" fechaNacimiento="1929-04-20" fechaFallecimiento="2005-05-09" comentario="Mi abuelo materno">
+
+
+        <datos>
+
+          <lugarNacimiento latitud="43.4762228"  longitud="-5.8441575"  altitud="25">
+            La miranda, Asturias
+          </lugarNacimiento>
+
+          <lugarFallecimiento  latitud="43.4402684"  longitud="-5.8513218"  altitud="110">
+            Posada de Llanera,Asturias
+          </lugarFallecimiento>
+
+
+          <foto>
+            abueloMat.jpg
+          </foto>
+
+        </datos>
+
+
+        <persona nombre="Dolores" apellidos="Garcia" fechaNacimiento="1901-08-07" fechaFallecimiento="2001-08-09" comentario="Mi bisabuela materna">
+
+          <datos>
+
+            <lugarNacimiento latitud="43.4053591"  longitud="-5.4821772"  altitud="98">
+              Tamon,Asturias
+            </lugarNacimiento>
+
+            <lugarFallecimiento latitud="43.3605909"  longitud="-5.844895"  altitud="238">
+              Oviedo,Asturias
+            </lugarFallecimiento>
+
+
+            <foto>
+              bisabuelaMat2.jpg
+            </foto>
+
+          </datos>
+
+        </persona>
+
+
+        <persona nombre="Jose" apellidos="Diaz" fechaNacimiento="1903-09-05" fechaFallecimiento="1940-07-24" comentario="Mi bisabuelo materno">
+
+
+          <datos>
+
+            <lugarNacimiento latitud="43.4053591"  longitud="-5.4821776"  altitud="98">
+              Pandenes,Asturias
+            </lugarNacimiento>
+
+            <lugarFallecimiento latitud="43.3605919"  longitud="-5.844845"  altitud="238">
+              Oviedo,Asturias
+            </lugarFallecimiento>
+
+
+            <foto>
+              bisabueloMat2.jpg
+            </foto>
+
+          </datos>
+
+        </persona>
+
+
+      </persona>
+
+    </persona>
+
+    
+    
+    <persona nombre="Jesus" apellidos="Beltran Perez" fechaNacimiento="1971-04-17" comentario="Mi padre">
+
+
+
+      <datos>
+
+        <lugarNacimiento latitud="43.36" longitud="-5.92510543" altitud="49">
+          San Claudio, Asturias
+        </lugarNacimiento>
+
+
+        <foto>
+          papa.jpg
+        </foto>
+
+      </datos>
+
+
+      <persona nombre="Pilar" apellidos="Perez Garcia" fechaNacimiento="1941-05-24" comentario="Mi abuela paterna">
+
+
+        <datos>
+
+          <lugarNacimiento latitud="43.37497767"  longitud="-4.54035758" altitud="110">
+            Colombres, Asturias
+          </lugarNacimiento>
+
+
+          <foto>
+            abuelaPat.jpg
+          </foto>
+
+        </datos>
+
+
+        <persona nombre="Pilar" apellidos="Garcia Gaton" fechaNacimiento="1919-08-25" fechaFallecimiento="2001-07-08" comentario="Mi bisabuela paterna">
+
+          <datos>
+
+            <lugarNacimiento latitud="42.353333"   longitud="-4.540278"  altitud="800">
+              Las cabañas de Castilla, Palencia
+            </lugarNacimiento>
+
+            <lugarFallecimiento latitud="43.57372828" longitud="-5.92510543" altitud="49">
+              Aviles,Asturias
+            </lugarFallecimiento>
+
+
+            <foto>
+              bisabuelaPat1.jpg
+            </foto>
+
+          </datos>
+
+        </persona>
+
+
+
+
+        <persona nombre="Jose Luis" apellidos="Perez Caso" fechaNacimiento="1917-03-12" fechaFallecimiento="1973-11-04" comentario="Mi bisabuelo paterno">
+
+          <datos>
+
+            <lugarNacimiento latitud="43.374978"  longitud="-4.54035758" altitud="110">
+              Colombres, Asturias
+            </lugarNacimiento>
+
+            <lugarFallecimiento latitud="43.5737286" longitud="-5.9251055" altitud="49">
+              Aviles,Asturias
+            </lugarFallecimiento>
+
+
+            <foto>
+              bisabueloPat1.jpg
+            </foto>
+
+          </datos>
+
+        </persona>
+
+
+      </persona>
+
+
+      <persona nombre="Jose Manuel" apellidos="Beltran Lopez" fechaNacimiento="1938-03-03" comentario="Mi abuelo paterno">
+
+        <datos>
+
+          <lugarNacimiento latitud="42.4096322"  longitud="-4.6161004" altitud="45">
+            Palencia, Palencia
+          </lugarNacimiento>
+
+
+          <foto>
+            abueloPat.jpg
+          </foto>
+
+        </datos>
+
+
+        <persona nombre="Elpidia" apellidos="Lopez Herrero" fechaNacimiento="1915-10-17" fechaFallecimiento="1998-06-04" comentario="Mi bisabuela paterna">
+
+          <datos>
+
+            <lugarNacimiento latitud="41.3085496"  longitud="-4.9150256"  altitud="1131">
+              Medina del Campo, Valladolid
+            </lugarNacimiento>
+
+
+            <lugarFallecimiento latitud="40.9651572"  longitud="-5.6640182"  altitud="804">
+              Salamanca, Salamanca
+            </lugarFallecimiento>
+
+
+            <foto>
+              bisabuelaPat2.jpg
+            </foto>
+
+          </datos>
+
+        </persona>
+
+
+        <persona nombre="Manuel" apellidos="Beltran Ayuso" fechaNacimiento="1913-07-26" fechaFallecimiento="1978-02-09" comentario="Mi bisabuelo paterno">
+
+          <datos>
+
+            <lugarNacimiento latitud="41.0502540"  longitud="-0.1329565" altitud="472">
+              Alcañiz, Teruel
+            </lugarNacimiento>
+
+            <lugarFallecimiento  latitud="40.9651573"  longitud="-5.664019"  altitud="804">
+              Salamanca, Salamanca
+            </lugarFallecimiento>
+
+
+            <foto>
+              bisabueloPat2.jpg
+            </foto>
+
+          </datos>
+
+        </persona>
+
+
+
+
+      </persona>
+
+
+    </persona>
+
+
+
+  </persona>
+</arbolGenealogico>
