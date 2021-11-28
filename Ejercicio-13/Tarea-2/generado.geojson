@@ -1,0 +1,32 @@
+{
+    "type": "FeatureCollection",
+    "name": "generado",
+    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+    "features": [
+    { "type": "Feature", "properties": { "Name": "\n        Oviedo,Asturias\n      ", "description": " Aqui nacio Martin Beltran Diaz" }, "geometry": { "type": "Point", "coordinates": [ -5.844722, 43.360278238 ] } },
+    { "type": "Feature", "properties": { "Name": "\n          Oviedo,Asturias\n        ", "description": " Aqui nacio Rocio Diaz Prendes" }, "geometry": { "type": "Point", "coordinates": [ -5.8448989, 43.360597723799998 ] } },
+    { "type": "Feature", "properties": { "Name": "\n            Coruno,Asturias\n          ", "description": " Aqui nacio Luz Prendes Cuervo" }, "geometry": { "type": "Point", "coordinates": [ -5.8292008, 43.4229063107 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Coruno,Asturias\n            ", "description": " Aqui murio Araceli Cuervo" }, "geometry": { "type": "Point", "coordinates": [ -5.829203, 43.422905107 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Coruno,Asturias\n            ", "description": " Aqui nacio Araceli Cuervo" }, "geometry": { "type": "Point", "coordinates": [ -5.8292068, 43.422905610699999 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Posada de Llanera,Asturias\n            ", "description": " Aqui murio Abelino Prendes" }, "geometry": { "type": "Point", "coordinates": [ -5.8513213, 43.440268111 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Posada de Llanera,Asturias\n            ", "description": " Aqui nacio Abelino Prendes" }, "geometry": { "type": "Point", "coordinates": [ -5.8513265, 43.440266111 ] } },
+    { "type": "Feature", "properties": { "Name": "\n            Posada de Llanera,Asturias\n          ", "description": " Aqui murio Anibal Diaz" }, "geometry": { "type": "Point", "coordinates": [ -5.8513218, 43.440268411 ] } },
+    { "type": "Feature", "properties": { "Name": "\n            La miranda, Asturias\n          ", "description": " Aqui nacio Anibal Diaz" }, "geometry": { "type": "Point", "coordinates": [ -5.8441575, 43.476222825 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Oviedo,Asturias\n            ", "description": " Aqui murio Dolores Garcia" }, "geometry": { "type": "Point", "coordinates": [ -5.844895, 43.360590923799997 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Tamon,Asturias\n            ", "description": " Aqui nacio Dolores Garcia" }, "geometry": { "type": "Point", "coordinates": [ -5.4821772, 43.405359198 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Oviedo,Asturias\n            ", "description": " Aqui murio Jose Diaz" }, "geometry": { "type": "Point", "coordinates": [ -5.844845, 43.360591923800001 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Pandenes,Asturias\n            ", "description": " Aqui nacio Jose Diaz" }, "geometry": { "type": "Point", "coordinates": [ -5.4821776, 43.405359198 ] } },
+    { "type": "Feature", "properties": { "Name": "\n          San Claudio, Asturias\n        ", "description": " Aqui nacio Jesus Beltran Perez" }, "geometry": { "type": "Point", "coordinates": [ -5.92510543, 43.3649 ] } },
+    { "type": "Feature", "properties": { "Name": "\n            Colombres, Asturias\n          ", "description": " Aqui nacio Pilar Perez Garcia" }, "geometry": { "type": "Point", "coordinates": [ -4.54035758, 43.374977671099998 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Aviles,Asturias\n            ", "description": " Aqui murio Pilar Garcia Gaton" }, "geometry": { "type": "Point", "coordinates": [ -5.92510543, 43.5737282849 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Las cabanas de Castilla, Palencia\n            ", "description": " Aqui nacio Pilar Garcia Gaton" }, "geometry": { "type": "Point", "coordinates": [ -4.540278, 42.3533338 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Aviles,Asturias\n            ", "description": " Aqui murio Jose Luis Perez Caso" }, "geometry": { "type": "Point", "coordinates": [ -5.9251055, 43.573728649 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Colombres, Asturias\n            ", "description": " Aqui nacio Jose Luis Perez Caso" }, "geometry": { "type": "Point", "coordinates": [ -4.54035758, 43.37497811 ] } },
+    { "type": "Feature", "properties": { "Name": "\n            Palencia, Palencia\n          ", "description": " Aqui nacio Jose Manuel Beltran Lopez" }, "geometry": { "type": "Point", "coordinates": [ -4.6161004, 42.409632245 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Salamanca, Salamanca\n            ", "description": " Aqui murio Elpidia Lopez Herrero" }, "geometry": { "type": "Point", "coordinates": [ -5.6640182, 40.9651572804 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Medina del Campo, Valladolid\n            ", "description": " Aqui nacio Elpidia Lopez Herrero" }, "geometry": { "type": "Point", "coordinates": [ -4.9150256, 41.308549611309999 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Salamanca, Salamanca\n            ", "description": " Aqui murio Manuel Beltran Ayuso" }, "geometry": { "type": "Point", "coordinates": [ -5.664019, 40.965157380400001 ] } },
+    { "type": "Feature", "properties": { "Name": "\n              Alcaniz, Teruel\n            ", "description": " Aqui nacio Manuel Beltran Ayuso" }, "geometry": { "type": "Point", "coordinates": [ -0.1329565, 41.050254047199999 ] } }
+    ]
+    }
+    
