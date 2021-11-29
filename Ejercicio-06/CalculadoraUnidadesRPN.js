@@ -11,7 +11,7 @@ class CalculadoraRPN{
    
     mostrar(){
         if(!this.pilaNumeros.vacio()){
-            document.querySelector('textarea[name=\"pantalla\"]').value = this.pilaNumeros.printStack(this.pilaNumeros);
+             document.querySelector('textarea[name=\"pantalla\"]').innerHTML = this.pilaNumeros.printStack(this.pilaNumeros);
             
         }
        
@@ -130,7 +130,7 @@ class CalculadoraRPN{
         this.pilaNumeros.vaciar();
         
         document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
-        document.querySelector('textarea[name=\"pantalla\"]').value = "";
+         document.querySelector('textarea[name=\"pantalla\"]').innerHTML = "";
     }
 
 }
@@ -352,7 +352,7 @@ class CalculadoraUnidadesRPN extends CalculadoraRPN{
         this.pilaNumeros.vaciar();
         
         document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
-        document.querySelector('textarea[name=\"pantalla\"]').value = "";
+        document.querySelector('textarea[name=\"pantalla\"]').innerHTML = "";
         document.querySelector('input[type=text][name=\"undActual\"]').value = "";
         document.querySelector('textarea[name=\"pnUnidades\"]').value = "";
     }
