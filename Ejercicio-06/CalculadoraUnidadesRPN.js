@@ -131,6 +131,7 @@ class CalculadoraRPN{
         
         document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
          document.querySelector('textarea[name=\"pantalla\"]').innerHTML = "";
+         
     }
 
 }
@@ -151,7 +152,7 @@ class CalculadoraUnidadesRPN extends CalculadoraRPN{
     mostrarUnidades(){
         if(!this.pilaNumeros.vacio() && !this.pilaUnidad.vacio()){
             
-            document.querySelector('textarea[name=\"pnUnidades\"]').value = this.pilaUnidad.printStack(this.pilaUnidad);
+            document.querySelector('textarea[name=\"pnUnidades\"]').innerHTML = this.pilaUnidad.printStack(this.pilaUnidad);
             
         }
        

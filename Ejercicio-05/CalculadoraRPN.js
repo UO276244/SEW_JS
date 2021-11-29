@@ -7,12 +7,13 @@ class CalculadoraRPN{
     constructor(pila){
         this.pila = pila;
     }
-
+    
+    
 
    
     mostrar(){
         if(!this.pila.vacio()){
-            document.querySelector('textarea[name=\"pantalla\"]').value = this.pila.printStack(this.pila);
+            document.querySelector('textarea[name=\"pantalla\"]').innerHTML = this.pila.printStack(this.pila);
             
         }
        
@@ -130,7 +131,7 @@ class CalculadoraRPN{
     vaciar(){
         this.pila.vaciar();
        document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
-        document.querySelector('textarea[name=\"pantalla\"]').value = "";
+        document.querySelector('textarea[name=\"pantalla\"]').innerHTML = "";
     }
 
 }
