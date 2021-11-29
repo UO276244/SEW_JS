@@ -50,7 +50,7 @@ class Geolocalizacion{
     initMap(){
 
         var lugar = {lat: this.latitud, lng: this.longitud};
-        var mapa = new google.maps.Map(document.getElementById('show'),{zoom: 8,center:lugar});
+        var mapa = new google.maps.Map(document.querySelector('main'),{zoom: 8,center:lugar});
         var marcador = new google.maps.Marker({position:lugar,map:mapa});
 
     }

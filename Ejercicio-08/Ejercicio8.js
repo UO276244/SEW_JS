@@ -10,6 +10,7 @@ class Meteo{
         this.idioma = "&lang=es";
         this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad  + this.unidades + this.idioma + "&APPID=" + this.apiKey;
        this.datos;
+       this.executed = false;
     }
 
 
@@ -60,15 +61,18 @@ class ArrayCiudades{
 
     mostrarTodas(){
 
-        let i = 0;
+        if(!this.executed){
 
-        for(i = 0; i<this.ciudades.length ; i++){
-            this.ciudades[i].cargarDatos();
+            let i = 0;
+
+            for(i = 0; i<this.ciudades.length ; i++){
+                this.ciudades[i].cargarDatos();
+            }
         }
-       
 
-        $('button').prop('disabled', true);
-        $('button').css("visibility", "hidden");
+        
+        this.executed = true;
+        
 
     }
 }

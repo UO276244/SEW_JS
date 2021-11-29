@@ -7,10 +7,12 @@ class CalculadoraRPN{
     constructor(pila){
         this.pila = pila;
     }
+
+
    
     mostrar(){
         if(!this.pila.vacio()){
-            document.getElementById('pantalla').value = this.pila.printStack(this.pila);
+            document.querySelector('textarea[name=\"pantalla\"]').value = this.pila.printStack(this.pila);
             
         }
        
@@ -20,7 +22,7 @@ class CalculadoraRPN{
 
     digito(x){
         
-        document.getElementById('currentnum').value += x;
+       document.querySelector('input[type=text][name=\"currentnum\"]').value += x;
         
     }
 
@@ -121,14 +123,14 @@ class CalculadoraRPN{
 
     enter(){
         this.pila.push(Number(document.getElementById('currentnum').value));
-        document.getElementById('currentnum').value = "";
+       document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
         this.mostrar();
     }
 
     vaciar(){
         this.pila.vaciar();
-        document.getElementById('currentnum').value = "";
-        document.getElementById('pantalla').value = "";
+       document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
+        document.querySelector('textarea[name=\"pantalla\"]').value = "";
     }
 
 }

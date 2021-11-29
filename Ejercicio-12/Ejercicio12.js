@@ -22,7 +22,7 @@ class FileUploader{
     
     infoArchivos() {
             this.totalBytes = 0;
-            this.fileArray  = document.getElementById("upload").files;
+            this.fileArray  = document.querySelector("input").files;
             this.nFiles = this.fileArray.length;
 
             var tit2 = "<h2>Info total de los archivos</h2>"
@@ -71,13 +71,14 @@ class FileUploader{
 
            
             if(file.type ===  regexJson || file.type === regexTxt || file.type === regexxml){
-                $("h3:last").after("<p id=\"" +  file.name + "\"></p></section>");
+                $("h3:last").after("<p name=\"" +  file.name + "\"></p></section>");
 
                 lector = new FileReader();
 
                 lector.onload = function(evento){
 
-                    document.getElementById(file.name).innerText = lector.result;
+                   
+                    document.querySelector("p[name=\"" + file.name + "\"").innerText = lector.result;
                     
                 }
 

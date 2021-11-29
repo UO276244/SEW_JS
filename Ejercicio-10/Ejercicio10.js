@@ -214,7 +214,7 @@ class RequestCreator{
         
        let hasDay = false;
 
-       var checkbox = document.getElementById('porDia');
+       var checkbox = document.querySelector('input[type=checkbox][name=\"truncarDia\"]');
 
        if(checkbox.checked){
         hasDay = true;
@@ -250,7 +250,7 @@ class RequestCreator{
     forKeyBoardCheckbuttons(id){
 
         
-       var checkbox = document.getElementById(id);
+       var checkbox = $("#"+id);
 
        if(checkbox.checked){
         $("#"+id).prop('checked', false);

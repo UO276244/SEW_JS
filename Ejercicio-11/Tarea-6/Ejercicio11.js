@@ -16,8 +16,8 @@ class Geolocalizacion{
 
 
     calcularRuta(){
-        let origen = $('#origen').val();
-        let destino = $('#destino').val();
+        let origen = $('input:first').val();
+        let destino = $('input:last').val();
 
         if(origen == "" || destino == ""){
             alert("Rellena todos los campos.");
@@ -40,7 +40,7 @@ class Geolocalizacion{
     initMap(){
 
         var lugar = {lat: this.latitud, lng: this.longitud};
-        var mapa = new google.maps.Map(document.getElementById('show'),{zoom: 8,center:lugar});
+        var mapa = new google.maps.Map(document.querySelector('main'),{zoom: 8,center:lugar});
         var marcador = new google.maps.Marker({position:lugar,map:mapa});
 
     }

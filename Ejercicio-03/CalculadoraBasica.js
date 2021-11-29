@@ -2,63 +2,65 @@ class CalculadoraBasica{
 
     constructor() {
         this.memoria = "";
-        //this.dig = null;
+       
     }
 
+
     
+  
 
     digitos(x) {
-        document.getElementById('pantalla').value += Number(x);
-        //this.dig = dig; 
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += Number(x);
+        
     }
 
     punto() {
-        document.getElementById('pantalla').value += ".";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += ".";
     }
 
    
     suma() {
-        document.getElementById('pantalla').value += "+";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "+";
     }
 
     resta() {
-        document.getElementById('pantalla').value += "-";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "-";
     }
 
     multiplicacion() {
-        document.getElementById('pantalla').value += "*";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "*";
     }
     
     division() {
-        document.getElementById('pantalla').value += "/";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "/";
     }
 
 
     mrc() {
-        this.memoria = document.getElementById('pantalla').value ;
+        this.memoria = document.querySelector('input[type=text][name=\"pantalla\"]').value ;
     }
 
     mMenos() {
-        document.getElementById('pantalla').value = document.getElementById('pantalla').value +  "-" + this.memoria;
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = document.querySelector('input[type=text][name=\"pantalla\"]').value +  "-" + this.memoria;
     }
 
     /**/
     mMas() {
-        document.getElementById('pantalla').value = document.getElementById('pantalla').value +  "+" + this.memoria;
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = document.querySelector('input[type=text][name=\"pantalla\"]').value +  "+" + this.memoria;
     }
 
 
 
     borrar() {
-        document.getElementById('pantalla').value = "";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = "";
     }
 
     igual() {
         try {
-            var toEval = document.getElementById('pantalla').value;
-            document.getElementById('pantalla').value = eval(toEval);
+            var toEval = document.querySelector('input[type=text][name=\"pantalla\"]').value;
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = eval(toEval);
         } catch (err) {
-            document.getElementById('pantalla').value = "Error.";
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = "Error.";
         }
         
     }

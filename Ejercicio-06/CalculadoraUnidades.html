@@ -21,12 +21,27 @@
 
             <form>
 
-                <label for="pantalla">Pila</label>
+                <label for="pantalla">Valores</label>
+
+                <label for="pnUnidades">Unidades</label>
+                
                 <textarea rows="10" type="text" name="pantalla" id="pantalla" value="" lang="es" disabled>
+                </textarea>
+
+                
+                <textarea rows="10" type="text" name="pnUnidades" id="pnUnidades" value="" lang="es" disabled>
                 </textarea>
                
                 <label for="currentnum">Numbero Actual</label>
+                <label for="undActual">Unidad actual</label>
                 <input type="text" name="currentnum" id="currentnum" value="" lang="es" disabled>
+                <input type="text" name="undActual" id="undActual" value="" lang="es" disabled>
+
+                <input type="button" name="unidadesMillas" id="unidadesMillas" value="Unidades: MILLAS" onclick="calculadoraRPN.unidadesMillas()">
+                <input type="button" name="unidadesKm" id="unidadesKm" value="Unidades: KM" onclick="calculadoraRPN.unidadesKm()">
+
+                <input type="button" name="kmAMillas" id="kmAMillas" value="KM -> MILLAS" onclick="calculadoraRPN.aMillas()">
+                <input type="button" name="MillasAKm" id="MillasAkm" value="MILLAS -> KM" onclick="calculadoraRPN.aKM()">
                 
                 <input type="button" value="sin" onclick="calculadoraRPN.sin()" />
                 <input type="button" value="cos" onclick="calculadoraRPN.cos()" />

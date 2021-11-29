@@ -8,57 +8,57 @@ class CalculadoraBasica{
     
 
     digitos(x) {
-        document.getElementById('pantalla').value += Number(x);
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += Number(x);
          
     }
 
     punto() {
-        document.getElementById('pantalla').value += ".";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += ".";
     }
 
    
     suma() {
-        document.getElementById('pantalla').value += "+";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "+";
     }
 
     resta() {
-        document.getElementById('pantalla').value += "-";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "-";
     }
 
     multiplicacion() {
-        document.getElementById('pantalla').value += "*";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "*";
     }
     
     division() {
-        document.getElementById('pantalla').value += "/";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "/";
     }
 
 
     mrc() {
-        this.memoria = document.getElementById('pantalla').value ;
+        this.memoria = document.querySelector('input[type=text][name=\"pantalla\"]').value ;
     }
 
     mMenos() {
-        document.getElementById('pantalla').value = document.getElementById('pantalla').value +  "-" + this.memoria;
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = document.querySelector('input[type=text][name=\"pantalla\"]').value +  "-" + this.memoria;
     }
 
     /**/
     mMas() {
-        document.getElementById('pantalla').value = document.getElementById('pantalla').value +  "+" + this.memoria;
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = document.querySelector('input[type=text][name=\"pantalla\"]').value +  "+" + this.memoria;
     }
 
 
 
     borrar() {
-        document.getElementById('pantalla').value = "";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = "";
     }
 
     igual() {
         try {
-            var toEval = document.getElementById('pantalla').value;
-            document.getElementById('pantalla').value = eval(toEval);
+            var toEval = document.querySelector('input[type=text][name=\"pantalla\"]').value;
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = eval(toEval);
         } catch (err) {
-            document.getElementById('pantalla').value = "Error.";
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = "Systax Error.";
         }
         
     }
@@ -81,23 +81,23 @@ class calculadoraCientifica extends CalculadoraBasica{
     deg(){
 
 
-        let num = eval(document.getElementById('pantalla').value);
+        let num = eval(document.querySelector('input[type=text][name=\"pantalla\"]').value);
 
         if(this.isDeg == true){
 
-            document.getElementById('pantalla').value = num *( Math.PI/180);
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = num *( Math.PI/180);
             this.isDeg = false;
 
         }else{
             
-            document.getElementById('pantalla').value = num *(180/Math.PI);
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = num *(180/Math.PI);
             this.isDeg = true;
         }
 
     }
 
     mr(){
-        document.getElementById('pantalla').value = this.memoria;
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = this.memoria;
     }
 
     mc(){
@@ -105,62 +105,62 @@ class calculadoraCientifica extends CalculadoraBasica{
     }
 
     abrirParentesis() {
-        document.getElementById('pantalla').value += "(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "(";
     }
 
     cerrarParentesis() {
-        document.getElementById('pantalla').value += ")";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += ")";
     }
 
     pi() {
-        document.getElementById('pantalla').value += "Math.PI";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.PI";
     }
 
     pow() {
-        document.getElementById('pantalla').value += "**";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "**";
     }
 
     pow2() {
-        document.getElementById('pantalla').value += "**2";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "**2";
     }
 
     sqrt() {
-        document.getElementById('pantalla').value += "Math.sqrt(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.sqrt(";
     }
 
     baseten() {
-        document.getElementById('pantalla').value += "Math.pow(10, ";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.pow(10, ";
     }
     
     log() {
-        document.getElementById('pantalla').value += "Math.log10(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.log10(";
     }
 
     exp() {
-        document.getElementById('pantalla').value += "Math.exp(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.exp(";
     }
 
     abs() {
-        document.getElementById('pantalla').value += "Math.abs(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.abs(";
     }
 
     borrarUltimo() {
-        var aux = document.getElementById('pantalla').value;
-        document.getElementById('pantalla').value = aux.slice(0, -1);
+        var aux = document.querySelector('input[type=text][name=\"pantalla\"]').value;
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = aux.slice(0, -1);
     }
 
     e() {
-        document.getElementById('pantalla').value += "Math.E";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.E";
     }
 
     ln() {
-        document.getElementById('pantalla').value += "Math.log(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.log(";
     }
 
     factorial() {
             var aux;
             try {
-                aux = eval(document.getElementById('pantalla').value);
+                aux = eval(document.querySelector('input[type=text][name=\"pantalla\"]').value);
                 var total = 1; 
             
                 for (var i = 1; i <= aux; i++) {
@@ -168,42 +168,42 @@ class calculadoraCientifica extends CalculadoraBasica{
                 } 
                 
                 this.ans = total;
-                document.getElementById('pantalla').value = total;
+                document.querySelector('input[type=text][name=\"pantalla\"]').value = total;
             }
             catch (err) {
-                document.getElementById('pantalla').value =  "SyntaxError";
+                document.querySelector('input[type=text][name=\"pantalla\"]').value =  "SyntaxError";
             }    
     }
 
 
     sin() {
-        document.getElementById('pantalla').value += "Math.sin(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.sin(";
     }
 
     cos() {
-        document.getElementById('pantalla').value += "Math.cos(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.cos(";
     }
 
     tan() {
-        document.getElementById('pantalla').value += "Math.tan(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.tan(";
     }
 
     asin() {
-        document.getElementById('pantalla').value += "Math.asin(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.asin(";
     }
 
     acos() {
-        document.getElementById('pantalla').value += "Math.acos(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.acos(";
     }
 
     atan() {
-        document.getElementById('pantalla').value += "Math.atan(";
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.atan(";
     }
 
 
     cambiarSigno() {
-       this.actual = Number(document.getElementById('pantalla').value)
-       document.getElementById('pantalla').value = this.actual*(-1)
+       this.actual = Number(document.querySelector('input[type=text][name=\"pantalla\"]').value)
+       document.querySelector('input[type=text][name=\"pantalla\"]').value = this.actual*(-1)
         
     }
 

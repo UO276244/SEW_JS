@@ -110,6 +110,7 @@ class ArrayCiudades{
 
     constructor(array){
         this.ciudades = array;
+        
     }
 
 
@@ -128,7 +129,7 @@ class ArrayCiudades{
             
         }
 
-        $('button').css("visibility","hidden");
+       
        
 
     }
