@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <!-- Datos que describen el documento -->
+
+        <meta charset="UTF-8" />
+        <title>Downloader JSON info electrica</title>
+        <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+        
+    
+        <meta name="author" content="Martin Beltran" />
+        <meta name="description" content="Ejercicio 14 " />
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="Ejercicio14.js"></script>
+           
+    </head>
+    <body>
+       
+        <h1>VISUALIZADOR DE GEOJSON Y TIEMPO</h1>
+        
+       
+        <label for="upload">Subir GeoJSON</label><br>
+            <input id="upload" type="file" name="upload" onchange="app.loadGeoJSON()">
+        <main id="map">
+        </main>
+
+        <section>
+
+            <h2>LOCALIZACIÓN SELECCIONADA:</h2>
+            <p>Sin seleccion</p>
+
+            <h2>SELECCION TIEMPO DE LOCALIZACION:</h2>
+            <label for="tiempoTxt">Tiempo en:</label>
+            <input id="tiempoTxt" type="text" name="tiempoTxt" value="escriba aqui una localizacion o clique sobre un punto"><br>
+
+            <label for="tiempoBtn">Subir GeoJSON</label><br>
+            <button id="tiempoBtn" name="tiempoBtn"  onclick="app.mostrarTiempo()">Descubrir Tiempo</button>
+
+            <article>
+                <h3>TIEMPO EN LOCALIZACION:</h3>
+                <p>Sin información aún</p>
+            </article>
+
+            
+        </section>
+
+        
+        
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO5kYgf-pUcspiZbLvrwGtYQN0m_EXZHo&callback=app.initMap"></script>
+
+        
+          
+
+
+
+    </body>
+</html>
